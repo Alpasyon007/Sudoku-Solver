@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/mnt/d/dev/Sudoku-Solver/build",
+  "command": "/usr/bin/g++   -I/mnt/d/dev/Sudoku-Solver/src/sudoku  -g   -std=gnu++17 -o CMakeFiles/SudokuSolver.dir/src/main.cpp.o -c /mnt/d/dev/Sudoku-Solver/src/main.cpp",
+  "file": "/mnt/d/dev/Sudoku-Solver/src/main.cpp"
+},
+{
+  "directory": "/mnt/d/dev/Sudoku-Solver/build",
+  "command": "/usr/bin/g++   -I/mnt/d/dev/Sudoku-Solver/src/sudoku  -g   -std=gnu++17 -o CMakeFiles/SudokuSolver.dir/src/sudoku/sudoku.cpp.o -c /mnt/d/dev/Sudoku-Solver/src/sudoku/sudoku.cpp",
+  "file": "/mnt/d/dev/Sudoku-Solver/src/sudoku/sudoku.cpp"
+}
+]
