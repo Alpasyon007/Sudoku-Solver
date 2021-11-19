@@ -30,6 +30,8 @@ Sudoku::Sudoku(int initialBoard[9][9]) : mSudokuBoardMatrix{
 	}
 };
 
+#include <random>
+
 void Sudoku::PrintBoard() {
 	for(int i = 0; i < 9; i++) {
 		// Print horizontal seperators
