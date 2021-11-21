@@ -1,11 +1,30 @@
+// Header Files
 #include "generator.h"
 
+// Includes
+#include <algorithm>
+#include <chrono>
 #include <random>
 
-int Generator::SimpleGenerator() {
-	// Generate first row as random numbers
+// Init static member variables
+std::array<std::array<int, 9>, 9> Generator::mSudokuBoardMatrix {{{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+																  { 0, 0, 0, 0, 0, 0, 0, 0, 0 }}};
+
+// A simple generator
+std::array<std::array<int, 9>, 9> Generator::SimpleGenerator(unsigned int seed /* = std::chrono::system_clock::now().time_since_epoch().count() */) {
+	//  Shuffle numbers 1-9 for the first row of the board
+	std::array<int,9> numbers { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	std::shuffle (numbers.begin(), numbers.end(), std::default_random_engine(seed));
+
+	// Assign first row from shuffled numbers
 	for(int i = 0; i < 9; i++) {
-		mSudokuBoardMatrix[0][i] = rand() % 10;
+		mSudokuBoardMatrix[0][i] = numbers[i];
 	}
 
 	// Generate next row as shift to the left of previous line
@@ -24,4 +43,6 @@ int Generator::SimpleGenerator() {
 			mSudokuBoardMatrix[i + 1][8]		= mSudokuBoardMatrix[i][0];
 		}
 	}
+
+	return mSudokuBoardMatrix;
 }

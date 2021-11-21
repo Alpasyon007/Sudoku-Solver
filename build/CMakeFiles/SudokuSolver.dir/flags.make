@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/d/dev/Sudoku-Solver/src/sudoku 
+CXX_INCLUDES = -I/mnt/d/dev/Sudoku-Solver/src/sudoku -I/mnt/d/dev/Sudoku-Solver/src/generator 
 

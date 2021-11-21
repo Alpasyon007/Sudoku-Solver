@@ -11,7 +11,7 @@ Sudoku::Sudoku() : mSudokuBoardMatrix{
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0	},
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0	}} {};
 
-Sudoku::Sudoku(int initialBoard[9][9]) : mSudokuBoardMatrix{
+Sudoku::Sudoku(std::array<std::array<int, 9>, 9> initialBoard) : mSudokuBoardMatrix{
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0	},
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0	},
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0	},
@@ -29,8 +29,6 @@ Sudoku::Sudoku(int initialBoard[9][9]) : mSudokuBoardMatrix{
 		}
 	}
 };
-
-#include <random>
 
 void Sudoku::PrintBoard() {
 	for(int i = 0; i < 9; i++) {
@@ -56,6 +54,6 @@ void Sudoku::PrintBoard() {
 	}
 }
 
-bool Sudoku::CheckBoard(int board[9][9]) {
+bool Sudoku::CheckBoard(std::array<std::array<int, 9>, 9> board) {
 	return true;
 };

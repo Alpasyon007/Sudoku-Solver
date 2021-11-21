@@ -1,11 +1,13 @@
 #pragma once
 
+#include <array>
+#include <chrono>		// std::chrono::system_clock
+
 class Generator {
 	private:
-		const int numbers[9] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		int mSudokuBoardMatrix[9][9];
+		static std::array<std::array<int, 9>, 9> mSudokuBoardMatrix;
 	public:
 		Generator();
 
-		int SimpleGenerator();
+		static std::array<std::array<int, 9>, 9> SimpleGenerator(unsigned int seed = std::chrono::system_clock::now().time_since_epoch().count());
 };

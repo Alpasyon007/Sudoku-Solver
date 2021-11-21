@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SudokuSolver.dir/src/generator/generator.cpp.o"
   "CMakeFiles/SudokuSolver.dir/src/main.cpp.o"
   "CMakeFiles/SudokuSolver.dir/src/sudoku/sudoku.cpp.o"
   "SudokuSolver"

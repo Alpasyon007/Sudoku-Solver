@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/mnt/d/dev/Sudoku-Solver/src/sudoku/sudoku.cpp
-sudoku.h
-/mnt/d/dev/Sudoku-Solver/src/sudoku/sudoku.h
-iostream
+/mnt/d/dev/Sudoku-Solver/src/generator/generator.h
+array
 -
-random
+chrono
 -
 
+/mnt/d/dev/Sudoku-Solver/src/main.cpp
+sudoku/sudoku.h
 /mnt/d/dev/Sudoku-Solver/src/sudoku/sudoku.h
+generator/generator.h
+/mnt/d/dev/Sudoku-Solver/src/generator/generator.h
+
+/mnt/d/dev/Sudoku-Solver/src/sudoku/sudoku.h
+array
+-
 

@@ -1,12 +1,14 @@
 #pragma once
 
+#include <array>
+
 class Sudoku {
 	private:
 		int mSudokuBoardMatrix[9][9];
 	public:
 		Sudoku();
-		Sudoku(int initialBoard[9][9]);
+		Sudoku(std::array<std::array<int, 9>, 9> initialBoard);
 
 		void PrintBoard();
-		bool CheckBoard(int board[9][9]);
+		bool CheckBoard(std::array<std::array<int, 9>, 9> board);
 };

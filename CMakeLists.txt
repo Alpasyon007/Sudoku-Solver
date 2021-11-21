@@ -20,6 +20,8 @@ add_executable(
 	${SOURCE_DIR}/main.cpp
 	${SOURCE_DIR}/sudoku/sudoku.cpp
 	${SOURCE_DIR}/sudoku/sudoku.h
+	${SOURCE_DIR}/generator/generator.cpp
+	${SOURCE_DIR}/generator/generator.h
 )
 
 # Include target directories
@@ -27,4 +29,5 @@ target_include_directories(
 	SudokuSolver
 	PRIVATE
 	${SOURCE_DIR}/sudoku
+	${SOURCE_DIR}/generator
 )

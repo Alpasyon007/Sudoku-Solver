@@ -123,6 +123,33 @@ SudokuSolver/fast:
 	$(MAKE) -f CMakeFiles/SudokuSolver.dir/build.make CMakeFiles/SudokuSolver.dir/build
 .PHONY : SudokuSolver/fast
 
+src/generator/generator.o: src/generator/generator.cpp.o
+
+.PHONY : src/generator/generator.o
+
+# target to build an object file
+src/generator/generator.cpp.o:
+	$(MAKE) -f CMakeFiles/SudokuSolver.dir/build.make CMakeFiles/SudokuSolver.dir/src/generator/generator.cpp.o
+.PHONY : src/generator/generator.cpp.o
+
+src/generator/generator.i: src/generator/generator.cpp.i
+
+.PHONY : src/generator/generator.i
+
+# target to preprocess a source file
+src/generator/generator.cpp.i:
+	$(MAKE) -f CMakeFiles/SudokuSolver.dir/build.make CMakeFiles/SudokuSolver.dir/src/generator/generator.cpp.i
+.PHONY : src/generator/generator.cpp.i
+
+src/generator/generator.s: src/generator/generator.cpp.s
+
+.PHONY : src/generator/generator.s
+
+# target to generate assembly for a file
+src/generator/generator.cpp.s:
+	$(MAKE) -f CMakeFiles/SudokuSolver.dir/build.make CMakeFiles/SudokuSolver.dir/src/generator/generator.cpp.s
+.PHONY : src/generator/generator.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SudokuSolver"
+	@echo "... src/generator/generator.o"
+	@echo "... src/generator/generator.i"
+	@echo "... src/generator/generator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
